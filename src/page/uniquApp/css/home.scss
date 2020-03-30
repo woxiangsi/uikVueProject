@@ -1,0 +1,37 @@
+.home{
+    height: 100%;
+    overflow: hidden;
+    .wrap{
+        height: 100%;
+        background: url("../img/homeBg_icon.png")no-repeat;
+        background-size: 100% 100%;
+        padding-top: 76px;
+        box-sizing: border-box;
+    }
+    .wrap-header{
+        width: 300px;
+        height: 41px;
+        margin: auto;
+        background: url('../img/homeHeader_icon.png')no-repeat;
+        background-size: 100% 100%;
+        margin-bottom: 85px;
+    }
+    .home-menu{
+        font-size: 19px;
+        color: #36373B;
+        width: 317px;
+        text-align: center;
+        line-height: 50px;
+        border: 1px solid #36373B;
+        border-radius: 25px;
+        margin: auto;
+        margin-bottom: 21px;
+    }
+    .activeMenu{
+        color: #FFF;
+        background: #595A5F;
+    }
+    .login{
+        margin-top: 87px;
+    }
+}

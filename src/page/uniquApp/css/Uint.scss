@@ -1,0 +1,245 @@
+.UintHeader{
+    height: 92px;
+    // overflow: hidden;
+    text-align: center;
+    font-size: 33px;
+    background: #FFF;
+    line-height: 92px;
+    color: #000;
+    position: relative;
+    span{
+        display: inline-block;
+    }
+    .header-let{
+        position: absolute;
+        left: 22px;
+    }
+    .header-rigt{
+        position: absolute;
+        top: 0px;
+        right: 14px;
+    }
+    .goBack{
+        width: 18px;
+        height: 33px;
+        background: url('../img/goBack_icon.png')no-repeat;
+        background-size: 100% 100%;
+        margin-left: 14px;
+        
+    }
+    .goHome{
+        display: inline-block;
+        width: 35px;
+        height: 33px;
+        background: url('../img/home_icon.png')no-repeat;
+        background-size: 100% 100%;
+        margin-left: 35px;
+    }
+    .filter_icon{
+        display: inline-block;
+        width: 35px;
+        height: 33px;
+        background: url('../img/filter_icon.png')no-repeat;
+        background-size: 100% 100%;
+        margin-left: 28px;
+        position: relative;
+        top: 6px;
+        // .el-dropdown-menu{
+        //     display: none;
+        // }
+    }
+    // .filter_icon:hover {
+    //     .el-dropdown-menu{
+    //         display: block!important;
+    //     }
+           
+    // }
+    
+}
+.UintBottomFun{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    overflow: hidden;
+    font-size: 25px;
+    padding: 17px 14px;
+    background: #FFF;
+    box-sizing: border-box;
+
+    // line-height: 90px;
+    .funContent{
+        padding-top: 16px;
+    }
+    .funBnt{
+        span{
+            display: inline-block;
+            padding: 16px 56px;
+            border-radius: 50px;
+            margin-left: 14px;
+            color: #FFF;
+        }
+    }
+    .color1{
+        background-image: linear-gradient(to right, #2BB5FE,#1987E9 );
+    }
+    .color2{
+        background-image: linear-gradient(to right, #FB9494,#FF6565 );
+    }
+}
+.UintBottomTips{
+    font-size: 22px;
+    .funContent{
+        padding-top: 13px;
+    }
+    .funBnt{
+        span{
+            display: inline-block;
+            padding: 13px 35px;
+            border-radius: 50px;
+            margin-left: 14px;
+        }
+    }
+}
+.UintBuyCar{
+    position: fixed;
+    right: 0px;
+    bottom: 1.62rem;
+    width: 20px;  
+    margin: 0 auto;  
+    line-height: 30px;  
+    font-size: 28px;
+    text-align: center;
+    background: #13B5B1;
+    padding: 26px 22px;
+    color: #FFF;
+    .num{
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        left: -17.5px;
+        top: -17.5px;
+        background: #E60012;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 35px;
+    }
+
+}
+.UintTips{
+    .wrap{
+        position: absolute;
+        background: #FFF;
+        width: 417px;
+        left: 50%;
+        margin-left: -208.5px;
+        box-shadow:0 0 20px rgba(0, 0, 0, 0.3);
+        padding: 14px 28px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        top: 30%;
+    }
+    .close{
+        overflow: hidden;
+    }
+    .close_icon{
+        width: 32px;
+        height: 32px;
+        background: url("../img/close2_icon.png")no-repeat;
+        background-size: 100% 100%;
+        float: right;
+    }
+    .title{
+        font-size: 33px;
+        color: #1B1B1B;
+        font-weight: 600;
+    }
+    .title_icon{
+        // float: left;
+        display: inline-block;
+        width: 33px;
+        height: 31px;
+        background: url("../img/submt_icon.png")no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    .content{
+        font-size: 21px;
+        color: #313131;
+        margin: 25px 0px;
+    }
+    .bnt{
+        font-size: 25px;
+        color: #1987E9;
+        width: 125px;
+        height: 42px;
+        line-height: 42px;
+        right: 0px;
+        border: 1px solid #1987E9;
+        border-radius: 10px;
+        float: right;
+        text-align: center;
+    }
+}
+.UnitDialog{
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    .wrap{
+        background: #FFF;
+        position: absolute;
+        box-shadow:0 0 20px rgba(0, 0, 0, 0.3);
+        width: 556px;
+        left: 50%;
+        margin-left: -278px;
+        top: 30%;
+        border-radius: 5px;
+    }
+    .title{
+        font-size: 33px;
+        color: #1B1B1B;
+        line-height: 74px;
+        text-align: center;
+        background: #F4F4F4;
+        position: relative;
+    }
+    .close_icon{
+        position: absolute;
+        right: 15px;
+        width: 32px;
+        height: 32px;
+        background: url("../img/close2_icon.png")no-repeat;
+        background-size: 100% 100%;
+        top: 50%;
+        margin-top: -16px;
+    }
+    .content{
+        font-size: 21px;
+        color: #313131;
+        padding: 32px 48px;
+        box-sizing: border-box;
+    }
+    .bnt{
+        text-align: center;
+        padding-bottom: 32px;
+        span{
+            display: inline-block;
+            width: 153px;
+            text-align: center;
+            line-height: 56px;
+            font-size: 25px;
+            border-radius: 5px;
+        }
+        .cancel{
+            color: #1987E9;
+            border: 1px solid #1987E9;
+            margin-right: 42px;
+        }
+        .sure{
+            color: #FFF;
+            background-image: linear-gradient(to right, #2BB5FE,#1987E9 );
+        }
+    }
+}

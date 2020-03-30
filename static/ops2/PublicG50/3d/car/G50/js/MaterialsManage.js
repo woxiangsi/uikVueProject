@@ -1,0 +1,277 @@
+var _carMaterials = [];
+var reflectance;
+var power;
+var color;
+var mtl;
+var car_main_color = 0x8c7b47;
+function createScene(geometry, material, map, x, y, z, b) {
+	var mesh = geometry;
+	if (material) {
+		mesh.material = material
+	};
+	if (map) {
+		mesh.material.map = map
+	}
+};
+function updateMaterial() {
+	mtl = new THREE.PhongNodeMaterial();
+	reflectance = new THREE.FloatNode(1.14);
+	power = new THREE.FloatNode(1);
+	console.log(cubemap);
+	//color = new THREE.CubeTextureNode(cubemap);
+	//var viewZ = new THREE.Math2Node(new THREE.NormalNode(THREE.NormalNode.VIEW), new THREE.Vector3Node(0, -0.4, -1), THREE.Math2Node.DOT);
+	//var theta = new THREE.OperatorNode(viewZ, new THREE.FloatNode(1.1), THREE.OperatorNode.ADD);
+	//var thetaPower = new THREE.Math2Node(theta, power, THREE.Math2Node.POW);
+	//var fresnel = new THREE.OperatorNode(reflectance, thetaPower, THREE.OperatorNode.MUL);
+	//mtl.color = new THREE.ColorNode(0x00ffff);
+	//mtl.environment = color;
+	//mtl.environmentAlpha = new THREE.Math1Node(fresnel, THREE.Math1Node.SAT);
+	//mtl.build();
+	_carMaterials = [new THREE.MeshBasicMaterial({
+		color: 0x8a8a8b,
+		specular: 0xffffff,
+		shininess: 650,
+		metalness: 1.1,
+		roughtness: 0.0,
+		opacity: 1.1,
+		envMap: cubemap,
+		emissive: 0x6c6c6c
+	}), new THREE.MeshBasicMaterial({
+		color: 0xffffff,
+		specular: 0xffffff,
+		opacity: 0.4,
+		transparent: true,
+		envMap: cubemap,
+		emissive: 0xffffff
+	}), new THREE.MeshBasicMaterial({
+		color: 0xffffff,
+		specular: 0xffffff,
+		shininess: 500,
+		envMap: cubemap
+	}), new THREE.MeshBasicMaterial({
+		color: 0x3a3a3a,
+		specular: 0x000000,
+		opacity: 0.80,
+		transparent: true,
+		envMap: cubemap,
+		shininess: 10,
+		emissive: 0x000000,
+		reflectivity: 2.6
+	}), new THREE.MeshBasicMaterial({
+		color: 0x000000,
+		specular: 0xffffff,
+		shininess: 50,
+		emissive: 0x000000,
+		shininess: 10,
+		envMap: cubemap
+	}), new THREE.MeshBasicMaterial({
+		color: 0xffffff,
+		specular: 0x000000,
+		shininess: 0,
+		metalness: 0.1,
+		roughtness: 0.0,
+		opacity: 10.1,
+		envMap: cubemap,
+		emissive: 0x626262
+	}), new THREE.MeshLambertMaterial({
+		color: 0x320606,
+		specular: 0xffffff,
+		shininess: 500,
+		opacity: 0.3,
+		metalness: 0.01,
+		transparent: true,
+		envMap: cubemap,
+		emissive: 0x821919
+	}), new THREE.MeshBasicMaterial({
+		color: 0xffffff,
+		emissive: 0x000000,
+		shininess: 500,
+		specular: 0x00ffff
+	}), new THREE.MeshBasicMaterial({
+		color: 0x605f5f,
+		specular: 0xffffff,
+		shininess: 650,
+		metalness: 1.1,
+		roughtness: 0.0,
+		opacity: 1.1,
+		envMap: cubemap,
+		emissive: 0x6f6f6f
+	}), new THREE.MeshPhongMaterial({
+		color: 0x000000,
+		specular: 0x333333
+	}), new THREE.MeshBasicMaterial({
+		color: 0xffffff,
+		specular: 0xffffff,
+		shininess: 100,
+		emissive: 0x000000
+	}), new THREE.MeshLambertMaterial({
+		color: 0xffffff,
+		specular: 0xffffff,
+		shininess: 100,
+		emissive: 0x000000
+	}), new THREE.MeshBasicMaterial({
+		color: 0x333333,
+		specular: 0xffffff,
+		shininess: 0.5,
+		envMap: cubemap
+	}), new THREE.MeshLambertMaterial({
+		color: 0x333333,
+		specular: 0x494949,
+		shininess: 10,
+		metal: false,
+		ambient: 0x494949,
+		emissive: 0x000000
+	}), new THREE.MeshBasicMaterial({
+		color: 0xffffff,
+		specular: 0xffffff,
+		opacity: 0.24,
+		transparent: true,
+		envMap: cubemap,
+		shininess: 100,
+		emissive: 0x343c42
+	}), new THREE.MeshBasicMaterial({
+		color: 0xffffff,
+		specular: 0xffffff,
+		opacity: 0.6,
+		transparent: true,
+		envMap: cubemap
+	}), new THREE.MeshBasicMaterial({
+		color: 0xffffff,
+		specular: 0xffffff,
+		shininess: 1500,
+		metalness: 1.1,
+		roughtness: 0.1,
+		opacity: 5.1,
+		emissive: 0x444545
+	}), new THREE.MeshBasicMaterial({
+		color: 0xf7f7f7,
+		specular: 0x000000,
+		shininess: 0.0,
+		metalness: 0,
+		emissive: 0x444545,
+		envMap: cubemap,
+		ambient: 0.9,
+		refractionRatio: 0.9,
+		reflectivity: 0.2,
+		shading: THREE.SmoothShading
+	}), new THREE.MeshBasicMaterial({
+		color: 0xc9c9c9,
+		specular: 0x000000,
+		shininess: 0.0,
+		metalness: 0,
+		emissive: 0x444545,
+		envMap: cubemap,
+		ambient: 0.5,
+		refractionRatio: 0.1,
+		reflectivity: 0.3,
+		shading: THREE.SmoothShading
+	}), new THREE.MeshBasicMaterial({
+		color: 0x333931,
+		specular: 0x000000,
+		opacity: 0.95,
+		transparent: true,
+		envMap: cubemap,
+		shininess: 10,
+		emissive: 0x000000,
+		reflectivity: 1.6
+	}), new THREE.MeshBasicMaterial({
+		color: 0xffffff,
+		specular: 0x000000,
+		shininess: 0,
+		metalness: 0.1,
+		roughtness: 0.0,
+		opacity: 10.1,
+		envMap: cubemap,
+		emissive: 0x626262
+	}), new THREE.MeshBasicMaterial({
+		color: 0xffffff,
+		specular: 0xffffff,
+		shininess: 100,
+		emissive: 0x000000
+	}), new THREE.MeshPhongMaterial({
+		color: 0x212121,
+		specular: 0xffffff,
+		shininess: 0,
+		metal: false,
+		ambient: 0x00ffff,
+		emissive: 0x000000
+	}), new THREE.MeshPhongMaterial({
+		color: 0xffffff,
+		specular: 0x000000,
+		shininess: 0.0,
+		metalness: 0,
+		emissive: 0x444545,
+		envMap: cubemap,
+		ambient: 0.5,
+		refractionRatio: 0.1,
+		reflectivity: 0.3,
+		shading: THREE.SmoothShading
+	}), new THREE.MeshPhongMaterial({
+		color: 0x818181,
+		specular: 0x000000,
+		shininess: 0.0,
+		metalness: 0,
+		emissive: 0x444545,
+		envMap: cubemap,
+		ambient: 0.5,
+		refractionRatio: 0.1,
+		reflectivity: 0.3,
+		shading: THREE.SmoothShading
+	}), new THREE.MeshBasicMaterial({
+		color: 0x151f12,
+		specular: 0x000000,
+		opacity: 0.865,
+		transparent: true,
+		envMap: cubemap,
+		shininess: 10,
+		emissive: 0x000000,
+		reflectivity: 1.6
+	}), new THREE.MeshBasicMaterial({
+		color: 0x161616,
+		specular: 0x000000,
+		opacity: 0.975,
+		transparent: true,
+		envMap: cubemap,
+		shininess: 10,
+		emissive: 0x000000,
+		reflectivity: 1.6
+	}), new THREE.MeshBasicMaterial({
+		color: 0xffffff,
+		specular: 0x000000,
+		shininess: 0,
+		metalness: 0.91,
+		roughtness: 10.0,
+		opacity: 5.1,
+		envMap: cubemap,
+		emissive: 0x404040,
+		reflectivity: 0.7
+	}), new THREE.MeshPhongMaterial({
+		color: 0x111111,
+		specular: 0xffffff,
+		shininess: 45,
+		metal: false,
+		ambient: 0xffffff,
+		emissive: 0x000000
+	}), new THREE.MeshPhongMaterial({
+		color: 0x8d1e1e,
+		specular: 0x420000,
+		shininess: 50,
+		metalness: 50.1,
+		roughtness: 10.0,
+		opacity: 5.1,
+		envMap: cubemap,
+		emissive: 0x600d0d,
+		reflectivity: 0.5
+	}), new THREE.MeshBasicMaterial({
+		color: 0xffffff,
+		specular: 0xffffff,
+		shininess: 1,
+		metal: false,
+		ambient: 0xffffff,
+		emissive: 0x000000,
+		map: jinshuzi_img
+	})]
+};
+function getCarMaterials() {
+	return _carMaterials
+}

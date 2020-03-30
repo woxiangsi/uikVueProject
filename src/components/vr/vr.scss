@@ -1,0 +1,11 @@
+.Recommended-wrap {
+  position: relative;
+  .back_btn{ position: absolute; top: 86px; text-align: center;
+    background: rgba(0, 0, 0, 0.3); border-radius: 50%; cursor: pointer;}
+  .back_btn::before{font-size: 80%; color: #eee;}
+  .vr_box{
+    width:100%; height:calc(100vh - 71px);
+  }.pg_bten{right: 40px; top:120px; width:50px; height:50px; line-height:50px;font-size:30px; border: 1.6px solid rgba(43, 43, 43, 0.4);}
+  .pg_bten::before{font-size: 120%; color: #eee;}
+  .az_bten{right: 17px;top:90px;  width:56px; height:56px; line-height: 56px;font-size:34px; border: 1.6px solid rgba(43, 43, 43, 0.4);}
+}

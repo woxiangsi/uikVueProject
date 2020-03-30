@@ -1,0 +1,341 @@
+.IntelligenceHome{
+    height: 100%;
+    overflow: hidden;
+    .wrap{
+        height: calc(100% - 92px);
+        background: url('../img/intellbg_icon.png')no-repeat;
+        background-size: 100% 100%;
+        overflow: auto;
+    }
+    .home{
+        padding: 53px 35px 0px 63px;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .title-icon{
+        display: inline-block;
+        width: 21px;
+        height: 3px;
+        background: #1B1B1B;
+        position: relative;
+        top: -10px;
+    }
+    .titleLet-icon{
+        margin-right: 21px;
+    }
+    .titleRigt-icon{
+        margin-left: 21px;
+    }
+    .homeBnt{
+        width: 243px;
+        line-height: 56px;
+        text-align: center;
+        color: #FFF;
+        font-size: 25px;
+        background-image: linear-gradient(to right, #2BB5FE,#1987E9 );
+        border-radius: 7px;
+        position: absolute;
+        bottom: -28px;
+        left: 163px;
+
+    }
+    .slide-item{
+
+    }
+    .slideI-title{
+        font-size: 33px;
+        color: #1B1B1B;
+        text-align: center;
+        padding-top: 76px;
+        padding-bottom: 69px;
+    }
+    .slideI-main{
+        display: flex;
+    }
+    .slideI-speed{
+        padding-left: 52px;
+        padding-right: 52px;
+        box-sizing: border-box;
+    }
+    .speed{
+        width: 100%;
+        height:21px;
+        background:rgba(255,255,255,1);
+        box-shadow:0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+        border-radius:10px;
+        display: flex;
+        overflow: hidden;
+    }
+    .speedItem{
+        flex: 1;
+        
+    }
+    .speedItemActive{
+        background: #2BB5FE;
+        
+    }
+    .speedContent{
+        margin-top: 21px;
+        font-size: 21px;
+        text-align: center;
+        color: #313131;
+    }
+    .color2BB5FE{
+        color: #2BB5FE;
+    }
+    .slideI-main>div{
+        flex: 1;
+        font-size: 26px;
+        color: #313131;
+        text-align: center;
+    }
+    .slide-img{
+        width: 125px;
+        height: 125px;
+        margin: auto;
+        background: #FFF;
+        padding: 35px;
+        box-sizing: border-box;
+        margin-bottom: 25px;
+        box-shadow:0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+        border-radius:6px;
+        div{
+            width: 100%;
+            height: 100%;
+            // background: url('../img/intellType1_icon.png')no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+    .carTypeImg1{
+        background: url('../img/carType_icon1.png')no-repeat;
+        background-size: 100% 100%;
+    }
+    .carTypeImg2{
+        background: url('../img/carType_icon2.png')no-repeat;
+        background-size: 100% 100%;
+    }
+    .carTypeImg3{
+        background: url('../img/carType_icon3.png')no-repeat;
+        background-size: 100% 100%;
+    }
+    .carTypeImg4{
+        background: url('../img/carType_icon4.png')no-repeat;
+        background-size: 100% 100%;
+    }
+    .qdImg1{
+        background: url('../img/qd_icon1.png')no-repeat;
+        background-size: 100% 100%;
+    }
+    .qdImg2{
+        background: url('../img/qd_icon2.png')no-repeat;
+        background-size: 100% 100%;
+    }
+    .qdImg3{
+        background: url('../img/qd_icon3.png')no-repeat;
+        background-size: 100% 100%;
+    }
+    .qdImg4{
+        background: url('../img/qd_icon4.png')no-repeat;
+        background-size: 100% 100%;
+    }
+    .loadImg1{
+        background: url('../img/load_icon1.png')no-repeat;
+        background-size: 100% 100%;
+    }
+    .loadImg2{
+        background: url('../img/load_icon2.png')no-repeat;
+        background-size: 100% 100%;
+    }
+    .loadImg3{
+        background: url('../img/load_icon3.png')no-repeat;
+        background-size: 100% 100%;
+    }
+    .modelImg1{
+        background: url('../img/model_icon1.png')no-repeat;
+        background-size: 100% 100%;
+    }
+    .modelImg2{
+        background: url('../img/model_icon2.png')no-repeat;
+        background-size: 100% 100%;
+    }
+    .modelImg3{
+        background: url('../img/model_icon3.png')no-repeat;
+        background-size: 100% 100%;
+    }
+    .modelImg4{
+        background: url('../img/model_icon4.png')no-repeat;
+        background-size: 100% 100%;
+    }
+    .lineImg1{
+        background: url('../img/line_icon1.png')no-repeat;
+        background-size: 100% 100%;
+    }
+    .lineImg2{
+        background: url('../img/line_icon2.png')no-repeat;
+        background-size: 100% 100%;
+    }
+    .ryImg1{
+        background: url('../img/ry_icon1.png')no-repeat;
+        background-size: 100% 100%;
+    }
+    .pdImg1{
+        background: url('../img/pd_icon1.png')no-repeat;
+        background-size: 100% 100%;
+    }
+    .pdImg2{
+        background: url('../img/pd_icon2.png')no-repeat;
+        background-size: 100% 100%;
+    }
+    .pdImg3{
+        background: url('../img/pd_icon3.png')no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    .activeTab{
+        color: #1987E9!important;
+        .slide-img{
+            border: 1px solid #1987E9;
+        }
+        .carTypeImg1{
+            background: url('../img/carTypeActive_icon1.png')no-repeat;
+            background-size: 100% 100%;
+        }
+        .carTypeImg2{
+            background: url('../img/carTypeActive_icon2.png')no-repeat;
+            background-size: 100% 100%;
+        }
+        .carTypeImg3{
+            background: url('../img/carTypeActive_icon3.png')no-repeat;
+            background-size: 100% 100%;
+        }
+        .carTypeImg4{
+            background: url('../img/carTypeActive_icon4.png')no-repeat;
+            background-size: 100% 100%;
+        }
+        .qdImg1{
+            background: url('../img/qdActive_icon1.png')no-repeat;
+            background-size: 100% 100%;
+        }
+        .qdImg2{
+            background: url('../img/qdActive_icon2.png')no-repeat;
+            background-size: 100% 100%;
+        }
+        .qdImg3{
+            background: url('../img/qdActive_icon3.png')no-repeat;
+            background-size: 100% 100%;
+        }
+        .qdImg4{
+            background: url('../img/qdActive_icon4.png')no-repeat;
+            background-size: 100% 100%;
+        }
+        .loadImg1{
+            background: url('../img/loadActive_icon1.png')no-repeat;
+            background-size: 100% 100%;
+        }
+        .loadImg2{
+            background: url('../img/loadActive_icon2.png')no-repeat;
+            background-size: 100% 100%;
+        }
+        .loadImg3{
+            background: url('../img/loadActive_icon3.png')no-repeat;
+            background-size: 100% 100%;
+        }
+        .modelImg1{
+            background: url('../img/modelActive_icon1.png')no-repeat;
+            background-size: 100% 100%;
+        }
+        .modelImg2{
+            background: url('../img/modelActive_icon2.png')no-repeat;
+            background-size: 100% 100%;
+        }
+        .modelImg3{
+            background: url('../img/modelActive_icon3.png')no-repeat;
+            background-size: 100% 100%;
+        }
+        .modelImg4{
+            background: url('../img/modelActive_icon4.png')no-repeat;
+            background-size: 100% 100%;
+        }
+        .lineImg1{
+            background: url('../img/lineActive_icon1.png')no-repeat;
+            background-size: 100% 100%;
+        }
+        .lineImg2{
+            background: url('../img/lineActive_icon2.png')no-repeat;
+            background-size: 100% 100%;
+        }
+        .ryImg1{
+            background: url('../img/ryActive_icon1.png')no-repeat;
+            background-size: 100% 100%;
+        }
+        .pdImg1{
+            background: url('../img/pdActive_icon1.png')no-repeat;
+            background-size: 100% 100%;
+        }
+        .pdImg2{
+            background: url('../img/pdActive_icon2.png')no-repeat;
+            background-size: 100% 100%;
+        }
+        .pdImg3{
+            background: url('../img/pdActive_icon3.png')no-repeat;
+            background-size: 100% 100%;
+        }
+        
+    }
+    
+    .slide-bnt{
+        width: 243px;
+        line-height: 56px;
+        text-align: center;
+        color: #FFF;
+        font-size: 25px;
+        background-image: linear-gradient(to right, #2BB5FE,#1987E9 );
+        border-radius: 7px;
+        margin: auto;
+        margin-top: 99px;
+    }
+
+    .wrap-tips{
+        width: 100%;
+        position: absolute;
+        background: rgba(0,0,0,0.8);
+        height: auto;
+        bottom: 0px;
+        border-radius: 28px 28px 0px 0px;
+        padding-bottom: 17px;
+        .title{
+            font-size: 33px;
+            color: #FFF;
+            line-height: 83px;
+            background: #1987E9;
+            padding: 0px 35px;
+            box-sizing: border-box;
+            position: relative;
+            border-radius: 28px 28px 0px 0px;
+            opacity: 0.6;
+        }
+        .close-icon{
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background: url('../img/close_icon.png')no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+            right: 35px;
+            top: 50%;
+            margin-top: -16px;
+        }
+        .wrap-infor{
+            height: 511px;
+            font-size: 33px;
+            color: #FFF;
+            padding: 48px 35px;
+            box-sizing: border-box;
+            
+            
+        }
+        
+    }
+
+    
+}

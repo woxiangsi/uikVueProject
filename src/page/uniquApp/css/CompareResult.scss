@@ -1,0 +1,121 @@
+.CompareResult{
+    .wrap{
+        height: 100%;
+        overflow: auto;
+    }
+    .wrap-top{
+        overflow: hidden;
+        display: flex;
+        border-bottom: 1px solid #F4F4F4;
+    }
+    .wrap-top>div{
+        height: 318px;
+        padding-top: 28px;
+        background: #FFF;
+    }
+    .wrap-center{
+        height: auto;
+        display:flex;
+        overflow: hidden;
+        background: #F4F4F4;
+    }
+    .wrap-center>div{
+        height: 61px;
+        line-height: 61px;
+    }
+    .wrapM-li{
+        display:flex;
+        background: #FFF;
+        // overflow: hidden;
+        border-bottom: 1px solid #F4F4F4;
+    }
+    .wrap-main>.wrapM-li>div{
+        font-size: 19px;
+        color: #313131;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    .wrap-fun{
+        display: flex;
+        height: 88px;
+        background: #FFF;
+    }
+    .slide1,.slide2,.slide3{
+        white-space:normal;
+    }
+
+    .slide1{
+        flex: 0.276;
+        border-right: 1px solid #DCDCDC;
+        padding-left: 14px;
+        box-sizing: border-box;
+    }
+    .slide2,.slide3{
+        flex: 0.362;
+        padding: 0px 15px;
+        box-sizing: border-box;
+        border-right:  1px solid #DCDCDC;
+    }
+    .slide3{
+        border-right: none;
+    }
+    .compareTitle{
+        font-size: 25px;
+        color: #1B1B1B;
+    }
+    .commonMolde{
+        font-size: 19px;
+        color: #1B1B1B;
+        margin-top: 28px;
+    }
+    .commonMolde_icon{
+        position: relative;
+        float: left;
+        width: 17px;
+        height: 17px;
+        border: 1px solid #959595;
+        border-radius: 5px;
+        box-sizing: border-box;
+        top: 10px;
+        margin-right: 12px;
+    }
+    .commonMoldeActive_icon{
+        position: relative;
+        top: 2.5px;
+        left: 2.5px;
+        float: left;
+        width: 10px;
+        height: 10px;
+        background:#1B1B1B;
+    }
+    .carImg{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .carTitle{
+        font-size: 25px;
+        color: #1B1B1B;
+        margin-top: 14px;
+    }
+    .carFun{
+        font-size: 19px;
+        color: #1987E9;
+        margin-top: 10px;
+    }
+    .checkCar{
+        width: 208px;
+        line-height: 56px;
+        text-align: center;
+        border-radius: 50px;
+        margin: auto;
+        font-size: 25px;
+        color: #FFF;
+        background-image: linear-gradient(to right, #2BB5FE,#1987E9 );
+        position: relative;
+        top: 20px;
+
+    }
+
+}
